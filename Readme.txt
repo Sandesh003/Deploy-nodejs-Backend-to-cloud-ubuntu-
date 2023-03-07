@@ -32,7 +32,7 @@
 // For Reverse Proxy
 ~ Go to " /etc/nginx/sites-enabled/ " and edit the default file with nano command...
 ~ add following into default file IN server --> location / 
-	       proxy_pass http://localhost:8000; # your app's port
+	 proxy_pass http://localhost:8000; # your app's port
          proxy_http_version 1.1;
          proxy_set_header Upgrade $http_upgrade;
          proxy_set_header Connection 'upgrade';
